@@ -7,6 +7,8 @@ public class FuncionarioTercerizado extends Funcionarios{
         super(nome, horasTrabalhadas, valorHora);
         this.despesaAdicional = despesaAdicional;
     }
+public FuncionarioTercerizado() {
+    }
 //Gets e Sets
     public Double getDespesaAdicional() {
         return despesaAdicional;
@@ -21,5 +23,12 @@ public class FuncionarioTercerizado extends Funcionarios{
         //Bonus + horasTrabalhadas * valorHoras
         return (despesaAdicional * 1.1) + (getHorasTrabalhadas() * getValorHora());
     }
+    @Override
+    public String toString() {
+        return "FuncionarioTercerizado [" + super.toString() + "]";
+    }
+
+    
+
 
 }

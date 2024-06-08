@@ -44,7 +44,7 @@ public class Funcionarios {
 @Override
     public String toString() {
         return "Funcionarios [Nome=" + nome + ", Horas Trabalhadas=" + horasTrabalhadas + ", Valor Hora=" + valorHora
-                + "]";
+                + " Pagamento=" + pagamento() + "]";
     }
 
     
