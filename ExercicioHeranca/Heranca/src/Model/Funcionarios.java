@@ -4,16 +4,17 @@ public class Funcionarios {
     private String nome;
     private Integer horasTrabalhadas;
     private Double valorHora;
+
 //Constructor
     public Funcionarios(String nome, Integer horasTrabalhadas, Double valorHora) {
         this.nome = nome;
         this.horasTrabalhadas = horasTrabalhadas;
         this.valorHora = valorHora;
     }
-//Gets e Sets
-    public String getNome() {
-        return nome;
-    }
+    public Funcionarios() {
+        }
+    
+    //Gets e Sets
 
     public void setNome(String nome) {
         this.nome = nome;
@@ -42,8 +43,9 @@ public class Funcionarios {
 //toString
 @Override
     public String toString() {
-        return "Funcionarios [nome=" + nome + ", horasTrabalhadas=" + horasTrabalhadas + ", valorHora=" + valorHora
+        return "Funcionarios [Nome=" + nome + ", Horas Trabalhadas=" + horasTrabalhadas + ", Valor Hora=" + valorHora
                 + "]";
     }
+
     
 }
